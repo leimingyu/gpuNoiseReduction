@@ -25,3 +25,9 @@ def play_wav(wavfile):
     stream.close()
     p.terminate()
 
+
+def nextpow2(targetnum):
+    num = 1
+    while num < targetnum:
+        num = num * 2
+    return num
